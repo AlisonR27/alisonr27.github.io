@@ -20,18 +20,17 @@ definePageMeta({
     }
 })
 
-onMounted(() => {
-  document.addEventListener("onscroll", (e) => {
-    console.log(window.location.hash)
-    if (window.location.hash == "#projects") return
-    e.preventDefault();
-  })
-})
+
 </script>
 
 <style>
 body {
-  overflow: hidden;
+  overflow-y: auto;
+}
+@media screen and (max-width: 576px) {
+  body {
+    overflow-y: auto;
+  }
 }
 
 section:not(:first-of-type) {

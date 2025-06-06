@@ -13,8 +13,6 @@ html, body {
   color: #fff;
   scroll-behavior: smooth;
 }
-body::-webkit-scrollbar {
-  display: none;
-}
+
 
 </style>
