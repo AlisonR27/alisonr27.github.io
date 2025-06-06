@@ -13,10 +13,10 @@
 <script lang="ts" setup>
 
 definePageMeta({
-    title: 'Home',
+    title: 'Alison Souza - WebDeveloper',
     layout: 'default',
     meta: {
-        description: 'Welcome to the home page of our Nuxt application!'
+        description: 'Fullstack Webdevelopment with accessible and responsive solutions'
     }
 })
 
