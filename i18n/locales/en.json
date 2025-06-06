@@ -1,0 +1,63 @@
+{
+    "welcome": {
+        "title": "Welcome",
+        "emphasis": "Web Development and Design with Acessibility.",
+        "text": "Solving problems with tech and criativity, for everyone, everywhere."
+    },
+    "about-me": {
+        "title": "About me",
+        "greetings": "Greetings! I'm ",
+        "text": "A fullstack developer living and enjoying Natal, Brazil. Experienced in creating inclusive and accessible digital experiences and systems. Currently on the later stage of the I.T. Bachelor in the Federal University of Rio Grande do Norte (UFRN)."
+    },
+    "experiences": {
+        "title": "Experience",
+        "text": "My road as a Software Developer is shown here, from the most recent work to the older one.",
+        "places": {
+            "sti":{
+                "type":"Front-end Developer",
+                "title": "I.T. Superintendence of UFRN - STI/UFRN",
+                "description": "Creation and maintance on institutional and academic accessible projects as the SIA, FELCS and ENADE projects at Projects Section."
+            },
+            "navi": {
+                "type":"Fullstack Development Research Scholarship",
+                "title": "Tech Inovation Advanced Nucleum of IFRN - NAVI/IFRN",
+                "description": "Prototipation and development of Embedded and Web health-related projects. Critical and Urgent Projects development in the pandemic context."
+            },
+            "csa": {
+                "type":"Volunteer Fullstack Developer",
+                "title": "Applied Solutions Centre - CSA/IFRN",
+                "description":"Projects that included Laravel Backend, Node.JS Webscraping with puppeteer and selenium and React Front-end. Exemple: Portal do Turismo, available at projects section."
+            },
+            "freela": {
+                "description": "Numerous websites created for small marketing companies at Natal, creation with Wordpress custom Themes."
+            }
+        }
+    },
+    "education": {
+        "title": "Education",
+        "text": "Here you can see more about my technical and academic formation.",
+        "type": {
+            "bachelor": "Bachelor",
+            "technical": "Technical",
+            "integrated": "Technical within Secondary School"
+        },
+        "course": {
+            "info": "Web development",
+            "gamedev": "Games Development",
+            "it": "I.T. (Computer Science)"
+        },
+        "unit": {
+            "imd": "Digital Metropolis Institute (IMD)",
+            "ifrn": "Federal Institute of Education, Science and Techonology of Rio Grande do Norte (IFRN)",
+            "ufrn": "Federal University of Rio Grande do Norte (UFRN)"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "text": "There are here some of the projects i've done or worked within."
+    },
+    "terms": {
+        "course": "Course",
+        "software-architecture": "Software Architecture"
+    }
+}

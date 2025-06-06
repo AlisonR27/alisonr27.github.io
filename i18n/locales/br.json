@@ -1,0 +1,63 @@
+{
+    "welcome": {
+        "title": "Boas Vindas",
+        "emphasis": "Desenvolvimento Web, Design e Acessibilidade.",
+        "text": "Solucionando problemas com tecnologia e criatividade, para todos, em todos os lugares."
+    },
+    "about-me": {
+        "title": "Sobre mim",
+        "greetings": "Olá, eu sou o ",
+        "text": "Sou um desenvolvedor fullstack residente em Natal, Brasil. Especializado em criar experiências digitais acessíveis e inclusivas, e atualmente cursando Tecnologia da Informação na UFRN."
+    },
+    "experiences": {
+        "title": "Experiência",
+        "text": "Aqui você pode conhecer minha trajetória atuando como desenvolvedor.",
+        "places": {
+            "sti":{
+                "type":"Desenvolvedor Front-end",
+                "title": "Superintendência de Tecnologia da Informação - STI/UFRN",
+                "description": "Atuação em projetos institucionais e inclusivos como os portal da SIA, FELCS e ENADE, consultaveis na seção projetos."
+            },
+            "navi": {
+                "type":"Bolsista de Desenvolvimento Fullstack",
+                "title": "Núcleo Avançado de Inovação Tecnológica - NAVI/IFRN",
+                "description": "Desenvolvimento web e embarcado, além de prototipação de interfaces para projetos de pesquisa. Desenvolvimento de projetos críticos e urgentes durante a pandemia."
+            },
+            "csa": {
+                "type":"Desenvolvedor Voluntário",
+                "title": "Centro de Soluções Aplicadas - CSA/IFRN",
+                "description":"Trabalhos com web scraping, backend com Laravel e front-end com React em aplicações de parceiros do IFRN. Exemplo do portal do Turismo, na seção de projetos"
+            },
+            "freela": {
+                "description": "Desenvolvimento de grande número de sites e aplicações com Wordpress (temas customizados)."
+            }
+        }
+    },
+    "education": {
+        "title": "Formação",
+        "text": "Aqui você pode ver um pouco mais sobre minha formação técnica e acadêmica.",
+        "type": {
+            "bachelor": "Bacharelado",
+            "technical": "Técnico",
+            "integrated": "Técnico Integrado ao Ensino Médio"
+        },
+        "course": {
+            "info": "Informática para Internet",
+            "gamedev": "Programação de Jogos Digitais",
+            "it": "Tecnologia da Informação"
+        },
+        "unit": {
+            "imd": "Instituto Metrópole Digital (IMD)",
+            "ifrn": "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN)",
+            "ufrn": "Universidade Federal do Rio Grande do Norte (UFRN)"
+        }
+    },
+    "projects": {
+        "title": "Projetos",
+        "text": "Aqui você pode ver um pouco sobre os projetos que já desenvolvi e/ou participei."
+    },
+    "terms": {
+        "course": "Curso",
+        "software-architecture": "Arquitetura de Software"
+    }
+}
