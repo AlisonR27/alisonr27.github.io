@@ -64,6 +64,9 @@ function setLanguage(code) {
     border-radius: 4px;
     display: flex; flex-direction: row; gap: 4px; align-items: center;
 
+    @media screen and (max-width: 576px) {
+      background: #0c1329;
+    }
 
     &:hover {
         background-color: rgba(255,255,255,.3);
