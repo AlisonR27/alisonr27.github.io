@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  nitro: {
+    preset: 'github_pages'
+  },
   modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/content', '@nuxtjs/i18n'],
   ssr: false,
   app: {
