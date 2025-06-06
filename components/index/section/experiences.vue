@@ -80,4 +80,17 @@ const experiences = [
 .experience-item a:hover {
   color: violet;
 }
+@media screen and (max-width: 480px) {
+  .experience-item {
+    p {
+      &:last-of-type {
+        font-weight: lighter;
+      } 
+      &:first-of-type > b {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
 </style>

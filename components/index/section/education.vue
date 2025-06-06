@@ -1,5 +1,5 @@
 <template>
-  <section id="education" >
+  <section id="education">
     <h2>Educação</h2>
      <div v-for="(item, index) in cursos" :key="index" class="education-item">
       <a :href="item.instituicao.link" target="_blank" rel="noopener noreferrer">
@@ -70,6 +70,12 @@ const cursos = [
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100%; 
+    height: 1.8em;
+    overflow: hidden;
+  }
 }
 
 .tag {
@@ -78,5 +84,10 @@ const cursos = [
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
+
+  @media screen and (max-width:480px) {
+    padding: 0.3rem 0.7rem;
+  }
 }
+
 </style>

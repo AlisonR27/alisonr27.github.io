@@ -2,10 +2,10 @@
   <section id="about-me">
     <article>
       <p> 
-      {{ $t('about-me.greetings') }} <em>Alison Souza</em>. <br/>
+        {{ $t('about-me.greetings') }} <em>Alison Souza</em>. <br/>
       </p>
-      <p>
-      {{ $t('about-me.text') }}
+      <p id="about-me-text" aria-label="A small text about me">
+        {{ $t('about-me.text') }}
       </p>
     </article>
     <ul id="links">
@@ -58,6 +58,9 @@ const contacts = [
       &:last-child {
         margin-top: 0.3rem;
         font-size: 24pt;
+        @media screen and (max-width: 480px) {
+          font-size: 18pt;
+        }
       }
     }
   }

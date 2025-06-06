@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" >
+  <section id="projects">
     <h2>{{ $t('projects.title') }}</h2>
     <p> {{ $t('projects.text') }} </p>
     <ul class="projects-list">
@@ -132,4 +132,18 @@ const projects = [
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .projects-list {
+    gap: 2rem;
+
+    > li {
+      width: 100%;
+      height: 200px;
+
+      img {
+        object-position: top;
+      }
+    }
+  }
+}
 </style>

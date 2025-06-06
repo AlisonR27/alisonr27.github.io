@@ -72,7 +72,7 @@ onMounted(() => {
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 canvas {
   display: block;
   background: radial-gradient(#1f1141b0, #04040a4a);
@@ -108,13 +108,33 @@ canvas {
   animation: blurry 2s ease-in-out;
   animation-delay: 1s;
   animation-fill-mode: forwards;
-}
+  p:first-child {
+    font-size: 48pt;
+    margin: 0;
 
-.welcome-content p:first-child {
-  font-size: 48pt;
-  margin: 0;
-}
+    @media screen and (max-width: 768px) {
+      font-weight: bold;
+      font-size: 32pt;
+    }
+    @media screen and (max-width: 480px){
+      font-size:26pt;
+      line-height:1.5em;
+      // word-wrap: normal;
+      // overflow-wrap:break-word;
+      // hyphens: auto;
+    }
+  }
+  p {
+    @media screen and (max-width: 768px){ 
+      max-width: 80%;
+    }
+    @media screen and (max-width: 480px){ 
+      font-size: 16pt;
+      font-weight: 200;
+    }
 
+  }
+}
 
 @keyframes blurry {
   from {
