@@ -11,19 +11,28 @@
 </template>
 
 <script lang="ts" setup>
-
-definePageMeta({
-    title: 'Alison Souza - WebDeveloper',
-    layout: 'default',
-    meta: {
-        description: 'Fullstack Webdevelopment with accessible and responsive solutions'
+useHead({
+  title: 'Alison Souza - WebDeveloper',
+  meta: [
+    {
+      name:"description",
+      content: 'Fullstack Developer for accessible and responsive solutions'
+    },
+    {
+      name: "authors",
+      content: "Alison Souza (alisonranier@gmail.com)"
     }
+  ]
+})
+definePageMeta({
+    layout: 'default',
+   
 })
 
 
 </script>
 
-<style>
+<style lang="scss">
 body {
   overflow-y: auto;
 }
@@ -42,12 +51,45 @@ section:not(:first-of-type) {
     justify-content: center;
 }
 
+.tags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
-.tag.star {
-  background-color: rgb(255, 243, 178);
+  @media screen and (max-width: 480px) {
+    max-width: 100%; 
+    height: 2em;
+    overflow: hidden;
+  }
 }
-.tag.star::before {
-  content: '★';
-  margin-right: 2px;
+
+.tag {
+  color: white;
+  border: 1px solid white;
+  background: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+
+  @media screen and (max-width:480px) {
+    padding: 0.3rem 0.7rem;
+  }
+
+  &.star {
+    color: gold;
+    border: 1px solid gold;
+    filter: drop-shadow(0 0 6px rgba(255, 217, 0, 0.3)) drop-shadow(0 0 2px rgba(255, 217, 0, 0.8));
+
+    &::before {
+      content: '★';
+      color: gold;
+      margin-right: 2px;
+    }
+  }
+
 }
+
+
 </style>
