@@ -1,6 +1,6 @@
 <template>
    <nav class="navigator">
-    <ul>
+    <ul role="menu" aria-label="Navegação do site">
         <li v-for="section in sections" :key="section.name">
             <a :href="'#' + section.slug"><Icon :name="section.icon"/></a>
             <em>{{ $t(`${section.slug}.title`) }}</em>
