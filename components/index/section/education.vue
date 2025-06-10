@@ -1,9 +1,12 @@
 <template>
   <section id="education">
-    <h2>Educação</h2>
+    <h2> {{ $t('education.title') }} </h2>
      <div v-for="(item, index) in cursos" :key="index" class="education-item">
       <a :href="item.instituicao.link" target="_blank" rel="noopener noreferrer">
-        <h3>{{ item.instituicao.name }}</h3>
+        <h3>
+          {{ item.instituicao.name }}
+          <Icon name="mdi-external-link"/>
+        </h3>
       </a>
       <p aria-label="Tipo de Formação"><b>{{ item.tipo }}</b></p>
       <p aria-label="Curso:"> {{ item.curso }}</p>
@@ -49,7 +52,7 @@ const cursos = [
 
 </script>
 
-<style >
+<style scoped>
 .education-item {
   margin-bottom: 2rem;
 }
@@ -57,6 +60,10 @@ const cursos = [
 .education-item a {
   color: white;
   text-decoration: none;
+
+  :deep(span) {
+    vertical-align: middle;
+  }
 }
 
 .education-item a:hover {
@@ -64,30 +71,7 @@ const cursos = [
   text-decoration: underline;
 }
 
-.tags {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
 
-  @media screen and (max-width: 480px) {
-    max-width: 100%; 
-    height: 1.8em;
-    overflow: hidden;
-  }
-}
 
-.tag {
-  color: #333;
-  background: #d9d4df;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-
-  @media screen and (max-width:480px) {
-    padding: 0.3rem 0.7rem;
-  }
-}
 
 </style>
