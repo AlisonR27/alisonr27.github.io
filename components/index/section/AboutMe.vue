@@ -45,7 +45,7 @@ const contacts = [
           background-clip: text;
           -webkit-text-fill-color: transparent;
           color: transparent;
-          background-size: 100% 400%;
+          background-size: 100% 120%;
           background-position: center center;
           background-attachment: fixed;
       }
