@@ -16,6 +16,9 @@ export default defineNuxtConfig({
       ]
     }
   },
+  gtag:{
+    enabled:true
+  },
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: 'br',
