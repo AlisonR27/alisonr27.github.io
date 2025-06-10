@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     }
   },
   gtag:{
+    id: process.env.NUXT_PUBLIC_GTAG_ID,
     enabled:true
   },
   i18n: {
