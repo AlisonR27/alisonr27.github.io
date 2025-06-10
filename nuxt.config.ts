@@ -17,8 +17,7 @@ export default defineNuxtConfig({
     }
   },
   gtag:{
-    id: process.env.NUXT_PUBLIC_GTAG_ID,
-    enabled:true
+    id: 'G-7LSFRTQ7K5',
   },
   i18n: {
     strategy: 'no_prefix',
