@@ -49,7 +49,7 @@ const experiences = [
     },
     cargo: "Freelancer Web Developer, Webmaster (Webmaster?)",
     descricao: t('experiences.places.freela.description'),
-    tecnologias: ["React", "WordPress", "Laravel", "Figma"]
+    tecnologias: ["PHP", "React", "WordPress", "Bootstrap", "Figma"]
   },
   {
     organizacao: {
@@ -58,7 +58,7 @@ const experiences = [
     },
     cargo: t('experiences.places.csa.type'),
     descricao: t('experiences.places.csa.description'),
-    tecnologias: ["Laravel", "React", "Web Scraping", "JavaScript"]
+    tecnologias: ["Laravel", "React", "Puppeteer", "JavaScript", ".NET"]
   },
   {
     organizacao: {
@@ -67,7 +67,7 @@ const experiences = [
     },
     cargo: t('experiences.places.navi.type'),
     descricao: t('experiences.places.navi.type'),
-    tecnologias: [".NET", "HTML", "CSS", "JavaScript", "WebSocket"]
+    tecnologias: ["Laravel", "Vue.JS", "JavaScript", "WebSocket"]
   },
 ];
 
