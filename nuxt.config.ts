@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github_pages'
   },
-  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/content', '@nuxtjs/i18n'],
+  modules: ['@nuxt/icon', '@nuxt/fonts', '@nuxt/content', '@nuxtjs/i18n', 'nuxt-gtag'],
   ssr: false,
   app: {
     head: {
@@ -16,8 +16,8 @@ export default defineNuxtConfig({
       ]
     }
   },
-
   i18n: {
+    strategy: 'no_prefix',
     defaultLocale: 'br',
     locales: [
       { code: 'br', name: 'Português do Brasil', file: 'br.json' },
