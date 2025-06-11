@@ -20,7 +20,7 @@
 <script lang="ts" setup>
 const { t } = useI18n()
 
-const cursos = [
+const cursos = computed(() => [
   {
     instituicao: {
       name: t('education.unit.ifrn'),
@@ -48,7 +48,7 @@ const cursos = [
     tipo: t('education.type.bachelor'),
     tecnologias: ["Spring", "Vue.js", "Java", "C++", "RabbitMQ", "Scrum", t('terms.software-architecture')]
   }
-];
+])
 
 </script>
 

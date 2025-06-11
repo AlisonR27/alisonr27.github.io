@@ -32,7 +32,7 @@ function hasStar(tecnology: String) {
 }
 const { t } = useI18n()
 
-const experiences = [
+const experiences = computed(() => [
   {
     organizacao: {
       name: t('experiences.places.sti.title'),
@@ -69,7 +69,7 @@ const experiences = [
     descricao: t('experiences.places.navi.type'),
     tecnologias: ["Laravel", "Vue.JS", "JavaScript", "WebSocket"]
   },
-];
+]);
 
 </script>
 
