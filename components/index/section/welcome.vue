@@ -1,5 +1,6 @@
 <template>
   <section id="welcome">
+      <div id="scroll-down" aria-hidden="true"></div>
       <div class="welcome-content">
           <p>
               {{ $t('welcome.emphasis') }}
@@ -133,6 +134,48 @@ canvas {
       font-weight: 200;
     }
 
+  }
+}
+#scroll-down {
+  width: 1.2em;
+  height: 3.5em;
+  position: absolute; bottom: 10px; left: 48%;
+  border-radius: 25px; 
+  border: 2px solid white;
+  z-index: 999;
+  padding: 6px;
+
+  &::before {
+    box-sizing: content-box;
+    content: '';
+    width: 80%; left: 3px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    border-radius: 100%;
+    background: white;
+    opacity: 1;
+    animation-name: scrolldown;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+    top: 2px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 2.4em;
   }
 }
 
