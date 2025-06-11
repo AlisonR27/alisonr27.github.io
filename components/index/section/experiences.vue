@@ -14,7 +14,9 @@
     <p aria-label="Descrição">{{ item.descricao }}</p>
 
     <ul class="tags">
-      <li class="tag" :class="hasStar(tecnologia)" v-for="(tecnologia, i) in item.tecnologias" :key="i">{{ tecnologia }}</li>
+      <li v-for="(tecnologia, index) in item.tecnologias" :key="index">
+        <GenericsTag :label="tecnologia" />
+      </li>
     </ul>
   </div>
 </section>
@@ -22,14 +24,6 @@
 </template>
 
 <script lang="ts" setup>
-function hasStar(tecnology: String) {
-  const classes = []
-  const favorites = ["Nuxt", "Vue.js", "PHP", "Laravel"] as String[]
-
-  if (favorites.includes(tecnology)) classes.push("star")
-
-  return classes
-}
 const { t } = useI18n()
 
 const experiences = computed(() => [

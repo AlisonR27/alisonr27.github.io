@@ -1,5 +1,5 @@
 <template>
-  <span class="tag" :class="{ 'star' : isFavorite }">
+  <span class="tag" :class="{ 'star' : isFavorite(label) }">
     {{ label }}
   </span>
 </template>
@@ -11,11 +11,12 @@
       "vue.js",
       "laravel",
       "php",
-      "scss"
+      "scss",
+      "nuxt"
   ] as String[]
 
   function isFavorite(label: String) {
-    return favorites.includes(label)
+    return favorites.includes(label.toLowerCase())
   }
 </script>
 

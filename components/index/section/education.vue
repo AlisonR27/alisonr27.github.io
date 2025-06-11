@@ -11,7 +11,9 @@
       <p aria-label="Tipo de Formação"><b>{{ item.tipo }}</b></p>
       <p aria-label="Curso:"> {{ item.curso }}</p>
       <ul class="tags">
-        <li class="tag" v-for="(tecnologia, index) in item.tecnologias" :key="index">{{ tecnologia }}</li>
+        <li v-for="(tecnologia, index) in item.tecnologias" :key="index">
+          <GenericsTag :label="tecnologia" />
+        </li>
       </ul>
     </div>
   </section>
